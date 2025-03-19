@@ -97,6 +97,17 @@ struct Person {
     }
 }
 
+func useMyStruct() {
+    let me = Person(firstName: "Heberth", lastName: "Deza")
+    me.sayhello()
+    
+    var pivot: String = ""
+    pivot = me.fullName()
+    pivot = me.fullNameWithComma()
+    pivot = me.fullNameWithDot()
+    print(pivot)
+}
+
 /*
     Use of array, dictionary and set
  */
