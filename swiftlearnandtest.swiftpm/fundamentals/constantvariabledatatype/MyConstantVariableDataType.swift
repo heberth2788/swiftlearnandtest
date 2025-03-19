@@ -9,8 +9,15 @@ import Foundation
 
 // constants: use 'let' to declare inmutable variables
 func testMyConstants() {
-    let myName: String = "Heberth"
+    let myName: String = "Heberth" // declare a constant with a value (literal value)
     print("Hello \(myName)!")
+    
+    let yourName: String // declare a constant that will have a value in the future
+    yourName = "HD"
+    print("Hello \(yourName)!")
+    
+    let myDouble: Double
+    myDouble = 3.1416
 }
 
 // variables: use 'var' to declare mutable variables
