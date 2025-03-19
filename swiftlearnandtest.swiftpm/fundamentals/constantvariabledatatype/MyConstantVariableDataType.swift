@@ -66,6 +66,101 @@ func testMyDatatypes() {
     let exponentDouble: Double = 1.21875e1 // 12.1875 in exponent notation
     let hexadecimalDouble: Double = 0xC.3p0 // 12.1875 in hexadecimal notation
     
+    // boolean
     let myBool: Bool = true
-    let myStr: String = "HD"
+    
+    // string and string interpolation
+    var myStr: String = "HD"
+    let yearsOld: Int = 36
+    myStr = "My name is \(myStr), and I'm \(yearsOld) years old" // String interpolation
+}
+
+/*
+    Define my own type with struct
+ */
+struct Person {
+    let firstName: String
+    let lastName: String
+    
+    func sayhello() {
+        print("Hello \(firstName) \(lastName)!")
+    }
+    
+    func fullName() -> String {
+        return "\(firstName) \(lastName)"
+    }
+    
+    func fullNameWithComma() -> String { "\(firstName) , \(lastName)" }
+    
+    func fullNameWithDot() -> String {
+        "\(firstName) . \(lastName)"
+    }
+}
+
+/*
+    Use of array, dictionary and set
+ */
+func myArrayDictionarySet() {
+    // Ways to define an array
+    var myArray0: Array = [1, 2, 3, 4, 5, 6]
+    let myArray1: [Int] = [1, 2, 3, 4, 5, 6]
+    let myArray2: Array<Int> = [1, 2, 3, 4, 5, 6]
+    let myArray3 = Array(repeating: 3, count: 6) // [3, 3, 3, 3, 3, 3]
+    
+    // Array methods
+    myArray0.append(7)
+    myArray0.insert(0, at: 0)
+    myArray0.remove(at: 2)
+    myArray0.removeLast()
+    myArray0.removeFirst()
+    myArray0.removeAll()
+    myArray0.count
+    myArray0.first
+    myArray0.last
+    
+    // iterating over an array
+    for item in myArray0 {
+        print(item)
+    }
+    
+    // Ways to define a dictionary
+    let myDictionary0: [String: Int] = ["apple": 3, "banana": 6, "blueberry": 9]
+    var myDictionary1: [String: Int] = [:]
+    myDictionary1["apple"] = 3
+    myDictionary1["banana"] = 6
+    myDictionary1["blueberry"] = 9
+    
+    // Dictionary methods
+    myDictionary0["apple"]
+    myDictionary0.keys
+    myDictionary0.values
+    myDictionary0.count
+    myDictionary1.removeValue(forKey: "apple")
+    myDictionary1.removeAll()
+    
+    // iterating over an dictionary
+    for (key, value) in myDictionary0 {
+        print("\(key) : \(value)")
+    }
+    
+    // Ways to define a set
+    let mySet0: Set<Int> = [1, 2, 3, 4, 5, 6]
+    var mySet1: Set<Int> = []
+    mySet1.insert(1)
+    mySet1.insert(2)
+    mySet1.insert(3)
+    mySet1.insert(4)
+    mySet1.insert(5)
+    mySet1.insert(6)
+    
+    // Set methods
+    mySet0.count
+    mySet0.contains(1)
+    mySet1.remove(1)
+    mySet1.removeAll()
+    
+    // iterating over a set
+    for item in mySet0 {
+        print(item)
+    }
 }
