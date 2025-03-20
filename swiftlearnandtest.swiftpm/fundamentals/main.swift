@@ -7,7 +7,8 @@
 
 import Foundation
 
-sayHello()
+testGeneral()
+//sayHello()
 
 func sayHello() {
     let greeting: String = "Hello, World! By HD."
