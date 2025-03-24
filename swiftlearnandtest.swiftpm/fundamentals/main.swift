@@ -7,10 +7,11 @@
 
 import Foundation
 
-testGeneral()
-//sayHello()
+//testGeneral()
+sayHello()
 
 func sayHello() {
-    let greeting: String = "Hello, World! By HD."
+    let greeting: String
+    greeting = "Hello, World! By HD."
     print(greeting)
 }
