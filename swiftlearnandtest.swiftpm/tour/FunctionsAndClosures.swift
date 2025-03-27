@@ -79,4 +79,41 @@ func useReturnFunc() {
     myInt = myFuncB(1987)
     
     print(myInt)
+    
+    let myFuncC: ((Int) -> Int) = { x  in
+        let retValue = x + 1
+        return retValue
+    }
+    let myFuncD: (Int) -> Int = { x  in
+        let retValue = x + 1
+        return retValue
+    }
+    myInt = myFuncC(1986)
+    
+    let numbers: [Int] = [1, 2, 3, 4, 5, 6]
+    
+    numbers.map ({ (number: Int) -> Int in
+        let result: Int = number * 2
+        return result
+    }).forEach ({ (value: Int) -> Void in
+        print(value)
+    })
+    
+    numbers.map { (num: Int) -> Int in
+        num * 2
+    }.forEach { (value: Int) -> Void in
+        print(value)
+    }
+    
+    numbers.map { num in
+        num * 2
+    }.forEach { value in
+        print(value)
+    }
+    
+    numbers.map {
+        $0 * 2
+    }.forEach {
+        print($0)
+    }
 }
