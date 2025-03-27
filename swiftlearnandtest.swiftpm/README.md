@@ -1,5 +1,7 @@
 #  Swift learn and test
 
+The Swift learn and test project.
+
 ## Class(object is passed by reference)
 1. struct (alternative to a class, it is passed by value)
 2. init for class constructor.
