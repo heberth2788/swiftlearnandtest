@@ -22,4 +22,4 @@
 1. Dictionary (instead of Map(Kotlin))
 
 ## Others
-1. \(...) to string interpolation (instead of ${...}(Kotlin))
+1. \\(...) to string interpolation (instead of ${...}(Kotlin))
