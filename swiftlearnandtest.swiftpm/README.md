@@ -10,6 +10,7 @@ The Swift learn and test project.
 5. Swift DOES NOT have a super class of all classes (Like: NSObject(Objective-C), Any(Kotlin), Object(Java))
 6. Void (instead of Unit(Kotlin), void(java))
 7. let/var (instead of val/var(Kotlin))
+8. newValue for default parameter name in set method(instead of field(Kotlin))
 
 ## Closure(Instead of lambda)
 1. in (instead of arrow operator '->')
