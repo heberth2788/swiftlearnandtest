@@ -70,11 +70,17 @@ class TriangleAndSquare {
         willSet {
             square.sideLength = newValue.sideLength
         }
+        didSet {
+            print("The old value: \(oldValue)")
+        }
     }
     
     var square: Square {
         willSet {
             triangle.sideLength = newValue.sideLength
+        }
+        didSet {
+            print("The old value: \(oldValue)")
         }
     }
     
