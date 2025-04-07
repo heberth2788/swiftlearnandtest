@@ -17,9 +17,11 @@ The Swift learn and test project.
 ### New:
 1. willSet/didSet (to run code before/after set the newValue to a attribute)
 2. case (use it in enum class)
-3. try? (use it for optional result, if error result is nil)
+3. try? (use it for optional result, if error, result is nil)
 4. async/async let/await/Task (use it for concurrency)
 5. mutating (use it in protocol methods definition)
+6. Error (protocol to implement errors)
+7. defer (use it into a func to execute code before function finish)
 
 ## Closure(Instead of lambda)
 1. in (instead of arrow operator '->')
