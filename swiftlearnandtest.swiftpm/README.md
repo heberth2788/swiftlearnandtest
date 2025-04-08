@@ -22,9 +22,11 @@ The Swift learn and test project.
 5. mutating (use it in protocol methods definition)
 6. Error (protocol to implement errors)
 7. defer (use it into a func to execute code before function finish)
+8. \_ (use it for unnamed parameter/variable)
+9. "{Character}" (use it for characters instead of '{Char}' in Kotlin)
 
 ## Closure(Instead of lambda)
-1. in (instead of arrow operator '->')
+1. in (instead of arrow operator '->'(Kotlin))
 2. $0, $1... (Instead of it(Kotlin))
 
 ## Functions
@@ -37,3 +39,5 @@ The Swift learn and test project.
 
 ## Others
 1. \\(...) to string interpolation (instead of ${...}(Kotlin))
+2. Character (instead of Char(Kotlin))
+3. Bool (instead o Boolean(Kotlin))
