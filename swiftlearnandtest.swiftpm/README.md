@@ -15,7 +15,7 @@ The Swift learn and test project.
 10 extension (instead of extention function (Kotlin))
 11. ?? (instead of elvis-operator '?:' (Kotlin))
 12. nil (instead of null(Kotlin))
-13. public, private, internal, package (instead of: public, private, internal, protected (Kotlin))
+13. public, private, internal(default), package (instead of: public(default), private, internal, protected (Kotlin))
 14. Collections: Array/Dictionary/Set/String (instead of: Array/List/Map/Set (Kotlin))
 
 ### New:
