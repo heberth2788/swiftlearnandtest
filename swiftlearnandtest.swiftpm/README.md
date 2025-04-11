@@ -12,7 +12,11 @@ The Swift learn and test project.
 7. let/var (instead of val/var(Kotlin))
 8. newValue for default parameter name in set method(instead of field(Kotlin))
 9. do/catch (instead of try/catch(Kotlin))
-10 extension (instead of extention function in Kotlin)
+10 extension (instead of extention function (Kotlin))
+11. ?? (instead of elvis-operator '?:' (Kotlin))
+12. nil (instead of null(Kotlin))
+13. public, private, internal, package (instead of: public, private, internal, protected (Kotlin))
+14. Collections: Array/Dictionary/Set/String (instead of: Array/List/Map/Set (Kotlin))
 
 ### New:
 1. willSet/didSet (to run code before/after set the newValue to a attribute)
@@ -24,6 +28,7 @@ The Swift learn and test project.
 7. defer (use it into a func to execute code before function finish)
 8. \_ (use it for unnamed parameter/variable)
 9. "{Character}" (use it for characters instead of '{Char}' in Kotlin)
+10. guard (use it like if/else in Kotlin)
 
 ## Closure(Instead of lambda)
 1. in (instead of arrow operator '->'(Kotlin))
@@ -41,3 +46,4 @@ The Swift learn and test project.
 1. \\(...) to string interpolation (instead of ${...}(Kotlin))
 2. Character (instead of Char(Kotlin))
 3. Bool (instead o Boolean(Kotlin))
+4. weak (use it to define weak reference in classes)
